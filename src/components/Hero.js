@@ -1,16 +1,15 @@
 import { useState } from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <div className="bg-white">
-
       <div className="relative isolate px-6 lg:px-8">
         <div
           aria-hidden="true"
-          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl pointer-events-none sm:-top-80"
         >
           <div
             style={{
@@ -20,6 +19,7 @@ export default function Home() {
             className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
           />
         </div>
+
         <div className="mx-auto max-w-2xl py-24">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
@@ -30,12 +30,13 @@ export default function Home() {
               </Link>
             </div>
           </div>
+
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            Create Your Professional Resume in Minutes
+              Create Your Professional Resume in Minutes
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-            Craft a standout resume with our expertly designed templates, tailored to make a lasting impression. Choose from a variety of styles to match your career goals, and easily customize your details. Boost your chances of landing your dream job with our user-friendly tools and free access to additional career resources!
+              Craft a standout resume with our expertly designed templates, tailored to make a lasting impression. Choose from a variety of styles to match your career goals, and easily customize your details. Boost your chances of landing your dream job with our user-friendly tools and free access to additional career resources!
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
@@ -50,9 +51,10 @@ export default function Home() {
             </div>
           </div>
         </div>
+
         <div
           aria-hidden="true"
-          className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+          className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl pointer-events-none sm:top-[calc(100%-30rem)]"
         >
           <div
             style={{
@@ -63,7 +65,6 @@ export default function Home() {
           />
         </div>
       </div>
-      
-</div>
-  )
+    </div>
+  );
 }

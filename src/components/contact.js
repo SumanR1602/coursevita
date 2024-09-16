@@ -16,6 +16,10 @@ const ContactUs = () => {
                 <p className="text-gray-600">+91 7801002139</p>
               </div>
               <div>
+                <h3 className="font-medium">Suman</h3>
+                <p className="text-gray-600">+91 7569332296</p>
+              </div>
+              <div>
                 <h3 className="font-medium">Prateek</h3>
                 <p className="text-gray-600">+91 7019384682</p>
               </div>

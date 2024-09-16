@@ -11,10 +11,8 @@ import Template7 from './Templates/Template7';
 import html2pdf from 'html2pdf.js';
 
 const ResumeBuilder = () => {
-  const { templateNumber } = useParams(); 
-  console.log(templateNumber);
+  const { templateNumber } = useParams();
   
-
   const [formData, setFormData] = useState({
     firstName: 'Michael',
     lastName: 'Jordan',

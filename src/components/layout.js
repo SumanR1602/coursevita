@@ -1,32 +1,34 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import logo from '../assets/images/logo.png';
 
-const layout = () => {
+const Layout = () => {
   return (
     <>
-        <header className="inset-x-0 top-0 z-50">
-        <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
-          <div className="flex lg:flex-1">
-              <p className='px-3 font-semibold text-2xl'>CraftMyCV</p>
+      <header className="inset-x-0 top-0 z-50">
+        <nav aria-label="Global" className="flex items-center justify-between px-6 py-4 lg:px-64">
+          <div className="flex">
+            <img src={logo} alt="logo" className='h-20' />
           </div>
-          <div className="flex lg:hidden justify-end">
-        <Link to="/contact" className="text-md font-semibold leading-6 text-gray-900 mx-2 hover:text-blue-500">
-          Contact Us
-        </Link>
-      </div>
-      
-      <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-        <Link to="/" className="text-md font-semibold leading-6 text-gray-900 mx-2 hover:text-blue-500">
-          Home
-        </Link>
-        <Link to="/contact" className="text-md font-semibold leading-6 text-gray-900 mx-2 hover:text-blue-500">
-          Contact Us
-        </Link>
-      </div>
+
+          <div className="lg:hidden flex justify-end">
+            <Link to="/contact" className="text-md font-semibold leading-6 text-gray-900 mx-2 hover:text-blue-500">
+              Contact Us
+            </Link>
+          </div>
+
+          <div className="hidden lg:flex lg:space-x-4">
+            <Link to="/" className="text-md font-semibold leading-6 text-gray-900 hover:text-blue-500">
+              Home
+            </Link>
+            <Link to="/contact" className="text-md font-semibold leading-6 text-gray-900 hover:text-blue-500">
+              Contact Us
+            </Link>
+          </div>
         </nav>
       </header>
     </>
-  )
-}
+  );
+};
 
-export default layout
+export default Layout;
